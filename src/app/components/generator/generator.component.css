@@ -1,0 +1,59 @@
+.codeBoarder {
+    border-style:groove;
+    border-width: 5px;
+    text-align: center;
+    width: 10rem
+}
+
+.text-align {
+    text-align: center;
+}
+
+.clock {
+    width: 50px;
+    justify-content: center
+}
+
+.container{
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+.divGrid {
+    display: flex;
+    width: 100%;
+   justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-gap: 3px;
+    background-color:grey;
+    padding: 5px;
+    width: 60%;
+    height: 25rem
+  }
+
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 5px 0;
+    font-size: 15px;
+  }
+
+  .live {
+      font-size: 20px;
+  }
+  span::before {
+      content: "•"; 
+      color: red;    
+    }

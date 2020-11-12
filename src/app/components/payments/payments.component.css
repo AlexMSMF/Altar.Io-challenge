@@ -1,0 +1,38 @@
+form {
+    margin-left: 2rem;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 2rem;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .container1{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.live {
+    font-size: 20px;
+}
+span::before {
+    content: "•"; 
+    color: red;    
+  }

@@ -1,0 +1,56 @@
+<div style="margin-top: 20px;">
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <form [formGroup]="gridCharacter" class="form-inline">
+            <div class="form-group mb-2">
+                <label for="inputPayment" class="sr-only">Payment</label>
+                <input [attr.disabled]="buttonDisabled ? '' : null" type="text" class="form-control" id="inputPassword2" placeholder="Insert Character" formControlName="character" #character  >
+              </div>   
+          </form>
+          </nav>
+      </div>
+      <div class="col text-align">
+        <img class="clock" src="../../../assets/iconfinder_web_clock_time_4681652.png" alt="Clock">
+      </div>
+      <div class="col text-align">
+        <button  type="button" class="btn btn-secondary" (click)="onClickHandler()">Generate 2D Grid</button>
+      </div>
+    </div>
+  </div>
+  <div  class="divGrid">
+  <div  class="grid-container">
+  
+    <div *ngFor="let num of gridNumbers" class="item">{{randomFactor[num]}}</div>
+  </div>
+</div>
+
+<div class="container1">
+    <div class="row">  
+
+        <div class="col text-align">
+            <nav aria-label="breadcrumb">
+                <p class="live"><span></span> Live</p>
+                <ol class="breadcrumb" >
+                  <li class="breadcrumb-item active" aria-current="page">YOUR CODE: {{liveCode}}</li>
+                </ol>
+              </nav>
+        </div>
+       
+      </div>
+</div>
+
+
+<!-- 
+<div class="container">
+<div>
+<nav aria-label="breadcrumb">
+    <p>Character</p>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
+  </nav>
+</div>
+</div> -->
+
